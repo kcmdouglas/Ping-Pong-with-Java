@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PingPongTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-01-04T20:47:52" hostname="kass-HP-Compaq-dc7900-Small-Form-Factor" time="0.008">
+<testsuite name="PingPongTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-01-04T22:39:37" hostname="kass-HP-Compaq-dc7900-Small-Form-Factor" time="0.004">
   <properties/>
-  <testcase name="isPingPong_forCountingInArrayList_true" classname="PingPongTest" time="0.008">
-    <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at PingPongTest.isPingPong_forCountingInArrayList_true(PingPongTest.java:9)
+  <testcase name="isPingPong_forCountingInArrayList_returnsArrayList" classname="PingPongTest" time="0.004">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at PingPong.isPingPong(PingPong.java:11)
+	at PingPongTest.isPingPong_forCountingInArrayList_returnsArrayList(PingPongTest.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,6 +50,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[What number shall I count to?
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
