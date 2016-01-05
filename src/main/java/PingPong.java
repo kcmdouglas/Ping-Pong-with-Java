@@ -11,12 +11,14 @@ public class PingPong {
     ArrayList<Object> pingPongArray = new ArrayList<Object>();
 
     for (Integer index = 1 ; index < userInput + 1; index ++) {
-        if(index % 3 == 0){
+        if(index % 15 == 0){
+          pingPongArray.add("pingpong");
+        } else if(index % 3 == 0){
           pingPongArray.add("ping");
-        } else if(index % 5 == 0){
+        } else if(index % 5 == 0) {
           pingPongArray.add("pong");
         } else {
-        pingPongArray.add(index);
+          pingPongArray.add(index);
         }
       }
     return pingPongArray;
