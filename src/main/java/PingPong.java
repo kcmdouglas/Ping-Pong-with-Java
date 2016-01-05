@@ -3,19 +3,17 @@ import java.util.ArrayList;
 
 
 public class PingPong {
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+
+  }
 
   public Object isPingPong(Integer userInput) {
-    ArrayList<Integer> pingPongArray = new ArrayList<Integer>();
+    ArrayList<Object> pingPongArray = new ArrayList<Object>();
 
     for (Integer index = 1 ; index < userInput + 1; index ++) {
-      pingPongArray.add(index);
-    }
+        pingPongArray.add(index);
+      }
+    return pingPongArray;
 
-    if(pingPongArray.get(1) == 2){
-      return true;
-    } else {
-      return false;
-    }
   }
 }

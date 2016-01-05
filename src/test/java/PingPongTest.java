@@ -7,6 +7,10 @@ public class PingPongTest {
   @Test
   public void isPingPong_forCountingInArrayList_returnsArrayValue() {
     PingPong testPingPong = new PingPong();
-    assertEquals(true, testPingPong.isPingPong(2));
+    ArrayList<Object> expectedArray = new ArrayList<Object>();
+    expectedArray = {1, 2};
+    assertEquals(expectedArray, testPingPong.isPingPong(2));
   }
+
+
 }
