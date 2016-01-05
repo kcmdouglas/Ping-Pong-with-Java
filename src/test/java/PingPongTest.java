@@ -21,7 +21,7 @@ public class PingPongTest {
      expectedArray.add(2);
      expectedArray.add("ping");
      expectedArray.add(4);
-    assertEquals(expectedArray, testPingPong.isPingPong(3));
+    assertEquals(expectedArray, testPingPong.isPingPong(4));
   }
 
 }
