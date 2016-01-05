@@ -13,5 +13,15 @@ public class PingPongTest {
     assertEquals(expectedArray, testPingPong.isPingPong(2));
   }
 
+  @Test
+  public void isPingPong_forNumbersDivisibleBy3_returnsPing() {
+    PingPong testPingPong = new PingPong();
+    ArrayList<Object> expectedArray = new ArrayList<Object>();
+     expectedArray.add(1);
+     expectedArray.add(2);
+     expectedArray.add("ping");
+     expectedArray.add(4);
+    assertEquals(expectedArray, testPingPong.isPingPong(4));
+  }
 
 }
