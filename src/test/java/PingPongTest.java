@@ -8,7 +8,8 @@ public class PingPongTest {
   public void isPingPong_forCountingInArrayList_returnsArrayValue() {
     PingPong testPingPong = new PingPong();
     ArrayList<Object> expectedArray = new ArrayList<Object>();
-    expectedArray = {1, 2};
+     expectedArray.add(1);
+     expectedArray.add(2);;
     assertEquals(expectedArray, testPingPong.isPingPong(2));
   }
 
