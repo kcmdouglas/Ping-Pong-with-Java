@@ -24,4 +24,17 @@ public class PingPongTest {
     assertEquals(expectedArray, testPingPong.isPingPong(4));
   }
 
+  @Test
+  public void isPingPong_forNumbersDivisibleBy5_returnsPong() {
+    PingPong testPingPong = new PingPong();
+    ArrayList<Object> expectedArray = new ArrayList<Object>();
+     expectedArray.add(1);
+     expectedArray.add(2);
+     expectedArray.add("ping");
+     expectedArray.add(4);
+     expectedArray.add("pong");
+     expectedArray.add("ping");
+    assertEquals(expectedArray, testPingPong.isPingPong(6));
+  }
+
 }
