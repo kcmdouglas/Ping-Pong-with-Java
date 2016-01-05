@@ -1,11 +1,12 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.util.ArrayList;
 
 public class PingPongTest {
 
   @Test
-  public void isPingPong_forCountingInArrayList_returnsArrayList() {
+  public void isPingPong_forCountingInArrayList_returnsArrayValue() {
     PingPong testPingPong = new PingPong();
-    assertEquals( [1, 2] , testPingPong.isPingPong(2));
+    assertEquals(true, testPingPong.isPingPong(2));
   }
 }
